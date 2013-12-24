@@ -248,7 +248,7 @@
     <Content Include="FrontEnd\Controllers.js" />
     <Content Include="FrontEnd\Home\hcHome.html" />
     <Content Include="FrontEnd\handsCampApp.js" />
-    <Content Include="FrontEnd\Index.html" />
+    <Content Include="Index.html" />
     <Content Include="FrontEnd\Login\hcRegisterForm.html" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />

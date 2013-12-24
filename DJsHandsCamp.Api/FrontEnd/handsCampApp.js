@@ -3,15 +3,15 @@
 handsCampApp.config(function($routeProvider) {
     $routeProvider.
         when('/', {
-            templateUrl: 'Home/hcHome.html',
+            templateUrl: 'FrontEnd/Home/hcHome.html',
             controller: 'hmHomeCtrl'
         }).
         when('/about', {
-            templateUrl: 'About/hcAbout.html',
+            templateUrl: 'FrontEnd/About/hcAbout.html',
             controller: 'hcAboutCtrl'                
         }).
         when('/register', {
-            templateUrl: 'Login/hcRegisterForm.html',
+            templateUrl: 'FrontEnd/Login/hcRegisterForm.html',
             controller: 'hcRegisterCtrl'
         }).
         otherwise({

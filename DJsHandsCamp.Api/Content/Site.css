@@ -6,12 +6,22 @@
     #FFFFFF white
     */
 
+html {
+    
+}
+
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #fff;
-  background-image: url(../DJWRCamp_Images/bg.jpg);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #fff;
+    background-image: url(../DJWRCamp_Images/bg.jpg);
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-color: #244C77;
 }
 
 .mainContainer {

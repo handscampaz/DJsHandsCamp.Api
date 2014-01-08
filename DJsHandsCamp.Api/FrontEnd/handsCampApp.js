@@ -1,4 +1,4 @@
-﻿var handsCampApp = angular.module('handsCampApp', ['ngRoute', 'handsCampControllers']);
+﻿var handsCampApp = angular.module('handsCampApp', ['ngRoute', 'ngResource', 'handsCampControllers']);
 
 handsCampApp.config(function($routeProvider) {
     $routeProvider.
@@ -11,7 +11,7 @@ handsCampApp.config(function($routeProvider) {
             controller: 'hcAboutCtrl'                
         }).
         when('/register', {
-            templateUrl: 'FrontEnd/Login/hcRegisterForm.html',
+            templateUrl: 'FrontEnd/Login/hcContactForm.html',
             controller: 'hcRegisterCtrl'
         }).
         otherwise({

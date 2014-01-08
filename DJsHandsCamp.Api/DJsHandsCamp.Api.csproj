@@ -160,10 +160,19 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ContactFormController.cs" />
+    <Compile Include="Controllers\HcMemberController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201401030419409_InitialCreate.cs" />
+    <Compile Include="Migrations\201401030419409_InitialCreate.Designer.cs">
+      <DependentUpon>201401030419409_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ContactForm.cs" />
+    <Compile Include="Models\HcContext.cs" />
+    <Compile Include="Models\HcMember.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +240,7 @@
     <Content Include="DJWRCamp_Images\2004022006.jpg" />
     <Content Include="DJWRCamp_Images\2004028934.jpg" />
     <Content Include="DJWRCamp_Images\2004109596.jpg" />
+    <Content Include="DJWRCamp_Images\AAAAC4G67bMAAAAAAZ-xMA.jpg" />
     <Content Include="DJWRCamp_Images\bg.jpg" />
     <Content Include="DJWRCamp_Images\Carolina+Panthers+v+New+Orleans+Saints+BOAStlfA4M_l.jpg" />
     <Content Include="DJWRCamp_Images\dj-hackett-celebrate.jpg" />
@@ -248,7 +258,7 @@
     <Content Include="FrontEnd\Home\hcHome.html" />
     <Content Include="FrontEnd\handsCampApp.js" />
     <Content Include="Index.html" />
-    <Content Include="FrontEnd\Login\hcRegisterForm.html" />
+    <Content Include="FrontEnd\Login\hcContactForm.html" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
@@ -583,17 +593,17 @@
     <Content Include="Images\orderedList9.png" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201401030419409_InitialCreate.resx">
+      <DependentUpon>201401030419409_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
